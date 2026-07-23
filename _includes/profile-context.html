@@ -1,0 +1,14 @@
+<script>
+    (function () {
+        var validProfiles = ["it", "admin", "teaching"];
+        var from = new URLSearchParams(window.location.search).get("from");
+
+        if (validProfiles.includes(from)) {
+            if (document.documentElement.classList.contains("profile-home")) {
+                document.documentElement.classList.remove("profile-home");
+            }
+        document.documentElement.classList.add("profile-" + from);
+        history.replaceState({}, "", window.location.pathname);
+        }
+    })();
+</script>

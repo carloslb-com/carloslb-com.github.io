@@ -1,0 +1,32 @@
+<svg width="100%" viewBox="0 0 680 300" role="img" style="" xmlns="http://www.w3.org/2000/svg"><defs><mask id="imagine-text-gaps-grhdcw" maskUnits="userSpaceOnUse"><rect x="0" y="0" width="680" height="300" fill="white"/><rect x="110.39747619628906" y="138.4770050048828" width="39.205047607421875" height="73.04600524902344" fill="black" rx="2"/><rect x="150.39747619628906" y="138.4770050048828" width="39.205047607421875" height="73.04600524902344" fill="black" rx="2"/><rect x="190.3974609375" y="138.4770050048828" width="39.205047607421875" height="73.04600524902344" fill="black" rx="2"/></mask></defs>
+  <title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Favicon Final: CLB</title>
+  <desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Three converging lines with large C L B initials in the center, surrounded by a circular ring</desc>
+
+  <g transform="translate(170, 60)" style="fill:rgb(0, 0, 0);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">
+    
+    <line x1="60" y1="40" x2="140" y2="155" stroke="#5dd4a4" stroke-width="3.5" stroke-linecap="round" mask="url(#imagine-text-gaps-grhdcw)" style="fill:rgb(0, 0, 0);stroke:rgb(93, 212, 164);color:rgb(11, 11, 11);stroke-width:3.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    
+    
+    <line x1="280" y1="40" x2="200" y2="155" stroke="#1a4f8a" stroke-width="3.5" stroke-linecap="round" mask="url(#imagine-text-gaps-grhdcw)" style="fill:rgb(0, 0, 0);stroke:rgb(26, 79, 138);color:rgb(11, 11, 11);stroke-width:3.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    
+    
+    <line x1="170" y1="290" x2="170" y2="185" stroke="#485940" stroke-width="3.5" stroke-linecap="round" mask="url(#imagine-text-gaps-grhdcw)" style="fill:rgb(0, 0, 0);stroke:rgb(72, 89, 64);color:rgb(11, 11, 11);stroke-width:3.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    
+    
+    <circle cx="170" cy="170" r="75" fill="none" stroke="var(--border-strong)" stroke-width="1.5" opacity="0.4" style="fill:none;stroke:color(srgb 0.0431373 0.0431373 0.0431373 / 0.2);color:rgb(11, 11, 11);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.4;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    
+    
+    <path d="M 170 95 A 75 75 0 0 1 252.8 112.2 L 225.2 140.8 A 50 50 0 0 0 170 120 Z" fill="#5dd4a4" opacity="0.08" style="fill:rgb(93, 212, 164);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.08;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <path d="M 252.8 112.2 A 75 75 0 0 1 252.8 227.8 L 225.2 199.2 A 50 50 0 0 0 225.2 140.8 Z" fill="#1a4f8a" opacity="0.08" style="fill:rgb(26, 79, 138);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.08;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    <path d="M 252.8 227.8 A 75 75 0 0 1 170 245 L 170 220 A 50 50 0 0 0 225.2 199.2 Z" fill="#485940" opacity="0.08" style="fill:rgb(72, 89, 64);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.08;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+    
+    
+    <text x="130" y="175" font-family="JetBrains Mono, monospace" font-size="52" font-weight="700" fill="#5dd4a4" text-anchor="middle" dominant-baseline="central" style="fill:rgb(93, 212, 164);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;JetBrains Mono&quot;, monospace;font-size:52px;font-weight:700;text-anchor:middle;dominant-baseline:central">C</text>
+    
+    
+    <text x="170" y="175" font-family="JetBrains Mono, monospace" font-size="52" font-weight="700" fill="var(--text-primary)" text-anchor="middle" dominant-baseline="central" style="fill:rgb(11, 11, 11);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;JetBrains Mono&quot;, monospace;font-size:52px;font-weight:700;text-anchor:middle;dominant-baseline:central">L</text>
+    
+    
+    <text x="210" y="175" font-family="JetBrains Mono, monospace" font-size="52" font-weight="700" fill="#1a4f8a" text-anchor="middle" dominant-baseline="central" style="fill:rgb(26, 79, 138);stroke:none;color:rgb(11, 11, 11);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;JetBrains Mono&quot;, monospace;font-size:52px;font-weight:700;text-anchor:middle;dominant-baseline:central">B</text>
+  </g>
+</svg>

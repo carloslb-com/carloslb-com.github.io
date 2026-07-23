@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<article class="post">
+    <header class="post__header">
+        <h1>{{ page.title }}</h1>
+        <div class="post__meta">
+            <p class="post__date">
+            {%- assign mes_numero = page.date | date: "%-m" | minus: 1 -%}
+            {%- assign mes_nombre = site.data.ui.months[site.active_lang][mes_numero] -%}
+            {%- assign dia = page.date | date: "%-d" -%}
+            {%- assign anio = page.date | date: "%Y" -%}
+            <time datetime="{{ page.date | date_to_xmlschema }}">
+                {%- if site.active_lang == "es" -%}
+                {{ dia }} de {{ mes_nombre }} de {{ anio }}
+                {%- else -%}
+                {{ mes_nombre }} {{ dia }}, {{ anio }}
+                {%- endif -%}
+            </time>
+            </p>
+            {% if page.categories.size > 0 %}
+            <ul class="post__categories">
+            {% for category in page.categories %}
+                <li class="post__category post__category--{{ category }}">{{ category }}</li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+
+        {% if page.tags.size > 0 %}
+        <ul class="post__tags">
+        {% assign post_profile = page.categories | first %}
+        {% for tag in page.tags %}
+            <li><a class="post__tag" href="{{ '/blog/' | relative_url }}?tag={{ tag | url_encode }}">{{ tag }}</a></li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    </header>
+
+    <div class="post__content">
+        {{ content }}
+    </div>
+</article>
+{%- include profile-pill.html -%}

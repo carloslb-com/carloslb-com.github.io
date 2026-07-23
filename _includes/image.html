@@ -1,0 +1,14 @@
+{%- assign img = site.data.images[include.id] -%}
+
+{%- comment -%}
+{% if img.embed %}
+    {% if img.src contains ".svg" %}
+        {{ img.src | inline_asset_content }}
+    {% else %}
+        NO SE PUEDE AGREGAR IMÁGENES QUE NO SEAN SVG.
+    {% endif %}
+{% else %}
+    <img src="{{ img.src | relative_url }}" alt="{% unless img.decorative %}{{ img.alt[site.active_lang] }}{% endunless %}" {% if img.class %}class="{{ img.class }}"{% endif %}>
+{% endif %}
+{%- endcomment -%}
+<img src="{{ img.src | relative_url }}" alt="{% unless img.decorative %}{{ img.alt[site.active_lang] }}{% endunless %}" {% if img.class %}class="{{ img.class }}"{% endif %}>

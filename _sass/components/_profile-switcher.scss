@@ -1,0 +1,36 @@
+@use "../abstracts/variables" as v;
+
+.profile-switcher__list {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-switcher__current {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    font-weight: 700;
+}
+
+.profile-switcher__link {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    color: var(--color-text-shade);
+    text-decoration: none;
+}
+
+.profile-switcher__link:hover {
+    color: var(--color-text-normal);
+}
+
+@media (max-width: v.$bp-nav) {
+    .site-header__bar .profile-switcher {
+        display: none;
+    }
+}

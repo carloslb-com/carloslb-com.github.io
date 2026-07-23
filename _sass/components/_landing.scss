@@ -1,0 +1,68 @@
+// --- Intro ---
+.landing-intro {
+  text-align: center;
+  margin-block: 2rem 3rem;
+}
+
+.landing-intro__lead {
+  max-width: 60ch;
+  margin-inline: auto;
+}
+
+// --- Puertas ---
+.landing-doors__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.landing-doors__item {
+  flex: 1 1 100%;
+}
+
+.landing-door {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: var(--color-surface);
+  border: 1px solid transparent;
+  color: var(--color-text-normal);
+  text-decoration: none;
+  transition: border-color 0.15s ease;
+}
+
+// Cada puerta toma el acento de su mundo
+.landing-door--it       { --door-accent: var(--accent-it); }
+.landing-door--admin    { --door-accent: var(--accent-admin); }
+.landing-door--teaching { --door-accent: var(--accent-teaching); }
+
+.landing-door:hover,
+.landing-door:focus-visible {
+  background-color: color-mix(in srgb, var(--door-accent) 15%, var(--color-surface));
+  border-color: var(--door-accent);
+}
+
+.landing-door:focus-visible {
+  outline: 2px solid var(--door-accent);
+  outline-offset: 2px;
+}
+
+.landing-door__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.landing-door__desc {
+  color: var(--color-text-shade);
+}
+
+.landing-door:hover .landing-door__title,
+.landing-door:focus-visible .landing-door__title {
+  color: var(--door-accent);
+}

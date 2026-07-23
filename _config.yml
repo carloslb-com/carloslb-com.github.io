@@ -1,0 +1,31 @@
+# Site Config
+title: Carlos León Bolaños
+description: Perfil profesional - IT, Administración y Formación
+baseurl: ""
+url: "https://carloslb.com"
+
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  smart_quotes: ["apos","apos","quot","quot"]
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-polyglot
+
+exclude: ["Gemfile", "Gemfile.lock", "vendor/**", "filelist.json", "log.txt", "CLAUDE.md", "Discarted", "*.tgz"] # ["name.ext", "**/name.ext"]
+exclude_from_localization: ["assets", "images"]
+
+permalink: /blog/:year/:month/:day/:title/
+
+# Polyglot
+languages: ["es", "en"]
+default_lang: "es"
+parallel_localization: false
+
+# SASS
+sass:
+  style: compressed
+  sourcemap: never

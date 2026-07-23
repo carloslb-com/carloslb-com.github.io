@@ -1,0 +1,58 @@
+categories:
+  - name:
+      es: Lenguajes y desarrollo
+      en: Languages & development
+    items:
+      - Python
+      - SQL
+      - PHP
+      - JavaScript
+      - C#
+      - HTML5
+      - CSS3
+
+  - name:
+      es: Bases de datos
+      en: Databases
+    items:
+      - SQL Server
+      - MySQL
+      - Access
+      - NoSQL
+
+  - name:
+      es: Redes y sistemas
+      en: Networks & systems
+    items:
+      - Routers y switches
+      - Redes inalámbricas
+      - VPN
+      - RADIUS
+      - Linux
+      - Virtualización
+      - Raspberry Pi
+
+  - name:
+      es: Herramientas y entornos
+      en: Tools & environments
+    items:
+      - Git / GitHub
+      - Visual Studio Code
+      - Visual Studio
+      - Postman
+      - WordPress
+
+  - name:
+      es: Gestión de proyectos
+      en: Project management
+    items:
+      - Gantt
+      - PERT
+      - Temporalización
+      - Redacción de proyectos
+
+  - name:
+      es: Protección de datos
+      en: Data protection
+    items:
+      - RGPD

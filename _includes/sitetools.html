@@ -1,0 +1,24 @@
+<div class="site-tools">
+    <ul class="site-tools__languageswitch" aria-label="{{ site.data.ui.nav_switch_language[site.active_lang] }}">
+        {%- for language in site.languages -%}
+            {%- unless language == site.active_lang -%}
+                <li>
+                {%- if language == site.default_lang -%}
+                    <a {% static_href %}href="{{ page.url }}"{% endstatic_href %}>{{ site.data.ui.lang_name[language] }}</a>
+                {%- else -%}
+                    <a {% static_href %}href="/{{ language }}{{ page.url }}"{% endstatic_href %}>{{ site.data.ui.lang_name[language] }}</a>
+                {%- endif -%}
+                </li>
+            {%- endunless -%}
+        {%- endfor -%}
+    </ul>
+    <button type="button" class="theme-toggle">
+        <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+            {%- include svg.html id="icon_theme_lightmode" -%}
+        </span>
+        <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+            {%- include svg.html id="icon_theme_darkmode" -%}
+        </span>
+        <span class="theme-toggle__text">{{ site.data.ui.theme_to_light[site.active_lang] }}</span>
+    </button>
+</div>

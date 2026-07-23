@@ -1,0 +1,18 @@
+<script src="{{ '/assets/js/mermaid.min.js' | relative_url }}"></script>
+
+<script>
+  mermaid.initialize({ startOnLoad: false });
+
+  // Puente kramdown → mermaid:
+  // busca los bloques ```mermaid (sea cual sea la estructura que genere rouge),
+  // extrae el código sin escapar y lo reescribe como <pre class="mermaid">
+  document.querySelectorAll('.language-mermaid').forEach((el) => {
+    const code = el.querySelector('code') || el;
+    const wrapper = document.createElement('pre');
+    wrapper.className = 'mermaid';
+    wrapper.textContent = code.textContent; // textContent = código sin escapar
+    el.replaceWith(wrapper);
+  });
+
+  mermaid.run({ querySelector: 'pre.mermaid' });
+</script>

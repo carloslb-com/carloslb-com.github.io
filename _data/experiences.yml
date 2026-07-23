@@ -1,0 +1,85 @@
+experiences:
+  - jobtitle:
+      es: Presidente y fundador
+      en: President and founder
+    companies:
+      - Antur
+    location:
+      es: Tenerife
+      en: Tenerife
+    start: 2023
+    current: true
+    description:
+      es: "Asociación dedicada a la investigación, ayuda y asesoramiento a establecimientos y empresarios del sector turístico a nivel nacional:"
+      en: "Association devoted to research, support and advisory services for tourism businesses and entrepreneurs nationwide:"
+    functions:
+      es: Redacción de estatutos, constitución y alta en el censo de Hacienda —incluida actividad económica para el autosostenimiento de la entidad, minimizando la dependencia de cuotas—, y gestión administrativa y de socios.
+      en: Drafting of bylaws, incorporation and registration with the tax authority census — including economic activity to make the entity self-sustaining, minimising reliance on membership fees — plus administrative and membership management.
+
+  - jobtitle:
+      es: Prácticas de Contabilidad y Fiscalidad
+      en: Accounting and Tax Internship
+    companies:
+      - Delgado-Yumar Asesores, S.L.
+    location:
+      es: Tenerife
+      en: Tenerife
+    start: "06/2023"
+    description:
+      es: "Prácticas de 80 horas en asesoría profesional:"
+      en: "80-hour internship at a professional advisory firm:"
+    functions:
+      es: Redacción de comunicaciones oficiales para organismos públicos (Agencia Tributaria estatal y canaria, Seguridad Social), cumpliendo requisitos, normativa y plazos. Gestión documental avanzada con digitalización y clasificación de archivos, y manejo introductorio de A3CON. Intermediación con clientes y socios en la tramitación de documentos clave (contratos, poderes notariales).
+      en: Drafting official communications for public bodies (state and Canary Islands tax agencies, Social Security), meeting requirements, regulations and deadlines. Advanced document management with digitisation and classification of files, plus introductory use of A3CON. Liaising with clients and business partners in processing key documents (contracts, powers of attorney).
+
+  - jobtitle:
+      es: Presidente y fundador
+      en: President and founder
+    companies:
+      - Chacales
+    location:
+      es: Tenerife
+      en: Tenerife
+    start: 2016
+    end: 2018
+    description:
+      es: "Asociación deportiva de airsoft:"
+      en: "Airsoft sports association:"
+    functions:
+      es: Redacción de estatutos, constitución y alta en el censo de Hacienda con actividad económica para el autosostenimiento, minimizando la dependencia de cuotas de socios. Implantación de herramientas de gestión unificada (Microsoft 365) para la administración de la entidad.
+      en: Drafting of bylaws, incorporation and registration with the tax authority census, with economic activity for self-sustainability, minimising reliance on membership fees. Implementation of unified management tools (Microsoft 365) for the association's administration.
+
+  - jobtitle:
+      es: Auxiliar de servicios
+      en: Services assistant
+    companies:
+      - ECS, S.A.
+      - Eulen, S.A.
+      - Tenser Control, S.L.
+      - JetCan Servicios Auxiliares, S.L.
+      - Servimáximo 2009, S.L.
+    location:
+      es: Tenerife
+      en: Tenerife
+    start: 2004
+    end: 2015
+    description:
+      es: "Once años, de forma intermitente, para distintas empresas del sector:"
+      en: "Eleven years, intermittently, for several companies in the sector:"
+    functions:
+      es: Atención al público y telefónica, control de acceso a recintos privados, control de salida de equipamiento, y recepción y control documental de mercancías. Cobertura de puestos en recintos de distinta naturaleza, con adaptación rápida a los protocolos y procedimientos de cada instalación.
+      en: Customer and telephone service, access control for private premises, equipment checkout control, and goods reception with documentary control. Covering posts at facilities of varying nature, adapting quickly to each site's protocols and procedures.
+
+  - jobtitle:
+      es: Secretario (voluntariado)
+      en: Secretary (volunteer)
+    companies:
+      - Grupo Folklórico de la Universidad de La Laguna
+    location:
+      es: Tenerife
+      en: Tenerife
+    start: 2009
+    end: 2011
+    functions:
+      es: Gestión documental y tramitaciones administrativas del grupo.
+      en: Document management and administrative procedures for the group.

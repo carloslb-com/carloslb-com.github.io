@@ -1,0 +1,61 @@
+# Lista de certificaciones para el perfil de Administración.
+# Certification list for Admninistration profile.
+
+# La estructura es la siguiente:
+# The structure to follow is:
+
+certifications:                                                                             # Nodo raíz. / Root Node.
+  - name:                                                                                   # El nombre de la certificación. / Certification name.
+      es: Gestión Integrada de Recursos Humanos — Certificado de Profesionalidad (en curso) # Nombre en español. / Spanish name.
+      en: Integrated Human Resources Management — Professional Certificate (in progress)    # Nombre en Inglés. / English name.
+    year: 2026                                                                              # Año en el que se realizó. / The year when the certification was obtained.
+    hours: 790                                                                              # Número de horas. / Total hours.
+    center:                                                                                 # Centro o entidad que emitió el certificado. / Center or Entity that emits the certification.
+      es: Servicio Canario de Empleo                                                        # Nombre del centro o entidad en español. / Name of the center or entity in Spanish.
+      en: Servicio Canario de Empleo                                                        # Nombre del centro o entidad en inglés. / Name of the center or entity in English.
+    links:                                                                                  # 
+      - text:
+          es: Impartido en CEP Santa Cruz
+          en: Delivered at CEP Santa Cruz
+        url: https://cursostenerife.es/
+
+  - name:
+      es: Gestión Contable y Gestión Administrativa para Auditoría — Certificado de Profesionalidad
+      en: Accounting and Administrative Management for Auditing — Professional Certificate
+    year: 2023
+    hours: 630
+    center:
+      es: Servicio Canario de Empleo
+      en: Servicio Canario de Empleo
+    links:
+      - text:
+          es: Impartido en Grupo Lincea
+          en: Delivered at Grupo Lincea
+        url: https://grupolincea.es/
+
+  - name:
+      es: Auditoría y Certificación RGPD
+      en: GDPR Audit and Certification
+    year: 2018
+    hours: 200
+    center:
+      es: Euroinnova Business School
+      en: Euroinnova Business School
+    links:
+      - text:
+          es: Sitio web
+          en: Website
+        url: https://www.euroinnova.com/
+
+  - name:
+      es: Inglés C1 — Certificación EF SET
+      en: English C1 — EF SET Certification
+    year: 2018
+    center:
+      es: EF SET
+      en: EF SET
+    links:
+      - text:
+          es: Certificado verificable
+          en: Verifiable certificate
+        url: https://www.efset.org/cert/idxSzN

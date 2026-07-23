@@ -1,0 +1,136 @@
+// =====================================
+//  Sistema de color (paletas)
+//  Definidas como propiedades CSS
+//  para permitir cambio en tiempo real
+//  (perfil + modo claro/oscuro)
+// =====================================
+
+// -------------------------------------
+//  Perfil IT — Modo oscuro
+// -------------------------------------
+[data-theme="dark"].profile-it {
+  --color-background:  #1a1a1a;
+  --color-surface:     #242424;
+  --color-text-normal: #e8e8e8;
+  --color-text-shade:  #a5a5a5;
+  --color-accent:      #5dd4a4;
+}
+
+// -------------------------------------
+//  Perfil IT — Modo claro
+// -------------------------------------
+[data-theme="light"].profile-it {
+  --color-background:  #fbfbfb;
+  --color-surface:     #f0f0f0;
+  --color-text-normal: #1a1a1a;
+  --color-text-shade:  #565656;
+  --color-accent:      #056340;
+}
+
+// -------------------------------------
+//  Perfil Administración — Modo claro
+// -------------------------------------
+[data-theme="light"].profile-admin {
+  --color-background:  #f4f6f9;
+  --color-surface:     #ffffff;
+  --color-text-normal: #1a2332;
+  --color-text-shade:  #415571;
+  --color-accent:      #1a4f8a;
+}
+
+// -------------------------------------
+//  Perfil Administración — Modo oscuro
+// -------------------------------------
+[data-theme="dark"].profile-admin {
+  --color-background:  #161b22;
+  --color-surface:     #1e2530;
+  --color-text-normal: #e6eaf0;
+  --color-text-shade:  #aab4c2;
+  --color-accent:      #73aadd;
+}
+
+// -------------------------------------
+//  Perfil Docencia — Modo claro
+// -------------------------------------
+[data-theme="light"].profile-teaching {
+  --color-background:  #faf6f0;
+  --color-surface:     #ffffff;
+  --color-text-normal: #2b2620;
+  --color-text-shade:  #585146;
+  --color-accent:      #485940;
+}
+
+// -------------------------------------
+//  Perfil Docencia — Modo oscuro
+// -------------------------------------
+[data-theme="dark"].profile-teaching {
+  --color-background:  #211d18;
+  --color-surface:     #2b251f;
+  --color-text-normal: #efe9e0;
+  --color-text-shade:  #bab0a1;
+  --color-accent:      #9fb992;
+}
+
+// -------------------------------------
+//  Perfil Home — Modo claro
+// -------------------------------------
+[data-theme="light"].profile-home {
+  --color-background:  #f7f5f3;
+  --color-surface:     #ffffff;
+  --color-text-normal: #1f1d1b;
+  --color-text-shade:  #565250;
+  --color-accent:      #3a3633;
+}
+
+// -------------------------------------
+//  Perfil Home — Modo oscuro
+// -------------------------------------
+[data-theme="dark"].profile-home {
+  --color-background:  #1c1a18;
+  --color-surface:     #262320;
+  --color-text-normal: #f0ede9;
+  --color-text-shade:  #b2ada9;
+  --color-accent:      #c9c4be;
+}
+
+// -------------------------------------
+//  Acento de cada mundo, disponible en
+//  cualquier perfil (para "asomar" un
+//  mundo desde fuera de él, p. ej. la landing)
+// -------------------------------------
+[data-theme="light"] {
+  --accent-it:       #056340;
+  --accent-admin:    #1a4f8a;
+  --accent-teaching: #485940;
+}
+
+[data-theme="dark"] {
+  --accent-it:       #5dd4a4;
+  --accent-admin:    #73aadd;
+  --accent-teaching: #9fb992;
+}
+
+// ===================================
+//  Tipografía
+// ===================================
+
+:root {
+  // Fuente de lectura: compartida por todos (el hilo de continuidad)
+  --font-body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  // Título por defecto (neutro): lo usa la home
+  --font-heading: "Atkinson Hyperlegible", system-ui, sans-serif;
+}
+
+// Cada perfil sobrescribe el título con SU carácter
+.profile-it {
+  --font-heading: "JetBrains Mono", ui-monospace, monospace;
+}
+
+.profile-admin {
+  --font-heading: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+}
+
+.profile-teaching {
+  --font-heading: "Nunito", system-ui, sans-serif;
+}

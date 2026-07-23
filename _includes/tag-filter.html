@@ -1,0 +1,14 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var tag = new URLSearchParams(window.location.search).get("tag");
+        if (!tag) { return; }
+
+        var items = document.querySelectorAll(".post-list__item");
+        items.forEach(function (item) {
+            var tags = (item.dataset.tags || "").split(",");
+            if (tags.indexOf(tag) === -1) {
+                item.hidden = true;
+            }
+        });
+    });
+</script>

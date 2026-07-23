@@ -1,0 +1,16 @@
+<script>
+    window.MathJax = {
+        loader: {
+            paths: {
+                mathjax: "{{ '/assets/js/mathjax/' | relative_url }}",
+                fonts: "{{ '/assets/js/mathjax/' | relative_url }}"
+            }
+        },
+        options: {
+            sre: {
+                locale: "{{ site.active_lang }}"
+            }
+        }
+    };
+</script>
+<script id="MathJax-script" async src="{{ '/assets/js/mathjax/tex-chtml.js' | relative_url }}"></script>

@@ -1,0 +1,13 @@
+.noposts__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.365rem;
+}
+
+.noposts__illustration {
+    flex: 1 1 0.25rem;
+}
+
+.noposts__text {
+    flex: 3 1 0.75rem;
+}

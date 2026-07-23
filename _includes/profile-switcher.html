@@ -1,0 +1,16 @@
+<nav class="profile-switcher" aria-label="{{ site.data.ui.nav_switch_profile[site.active_lang] }}">
+    <ul class="profile-switcher__list">
+        {%- for profile in site.data.navigation.profiles -%}
+            {%- assign profile_name = profile[0] -%}
+            {%- assign profile_url = profile[1].url -%}
+            {%- assign profile_label = site.data.ui.profiles[profile_name].name[site.active_lang] -%}
+            <li>
+                {%- if profile_name == page.profile -%}
+                <span class="profile-switcher__current" aria-current="page">{{ profile_label }}</span>
+                {%- else -%}
+                <a class="profile-switcher__link" data-profile="{{ profile_name }}" href="{{ profile_url | relative_url }}">{{ profile_label }}</a>
+                {%- endif -%}
+            </li>
+        {%- endfor -%}
+    </ul>
+</nav>

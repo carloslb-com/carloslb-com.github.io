@@ -1,0 +1,39 @@
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var validProfiles = ["it", "admin", "teaching"];
+        var html = document.documentElement;
+
+        var activeProfile = null;
+        validProfiles.forEach(function (profile) {
+            if (html.classList.contains("profile-" + profile)) {
+            activeProfile = profile;
+            }
+        });
+
+        if (activeProfile) {
+            var tabs = document.querySelectorAll('.profile-switcher__link[data-profile="' + activeProfile + '"]');
+            tabs.forEach(function (tab) {
+            tab.classList.remove("profile-switcher__link");
+            tab.classList.add("profile-switcher__current");
+            tab.setAttribute("aria-current", "location");
+            });
+
+            var langLinks = document.querySelectorAll('.site-tools__languageswitch a');
+            langLinks.forEach(function (link) {
+                var url = new URL(link.href);
+                url.searchParams.set("from", activeProfile);
+                link.href = url.toString();
+            });
+
+            document.querySelectorAll(".post__tag").forEach(function (link) {
+            var url = new URL(link.href);
+            url.pathname = url.pathname.replace(/^(\/[a-z]{2})?\/blog\//, function (match, lang) {
+                return (lang || "") + "/" + activeProfile + "/blog/";
+            });
+                link.href = url.toString();
+            });
+        }
+
+        
+    });
+</script>

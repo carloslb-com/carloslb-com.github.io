@@ -1,0 +1,40 @@
+common:
+  - name: blog
+    url: /blog/
+  - name: contact
+    url: /contact/
+
+profiles:
+  it:
+    url: /it/
+    links:
+      - name: about_me
+        url: /it/#about
+      - name: projects
+        url: /it/#projects
+      - name: skills
+        url: /it/#skills
+      - name: blog-it
+        url: /it/blog/
+  admin:
+    url: /admin/
+    links:
+      - name: about_me
+        url: /admin/#about
+      - name: experience
+        url: /admin/#experience
+      - name: certifications
+        url: /admin/#certifications
+      - name: blog-admin
+        url: /admin/blog/
+  teaching:
+    url: /teaching/
+    links:
+      - name: about_me
+        url: /teaching/#about
+      - name: methodology
+        url: /teaching/#methodology
+      - name: courses
+        url: /teaching/#courses
+      - name: blog-teaching
+        url: /teaching/blog/

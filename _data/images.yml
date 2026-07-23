@@ -1,0 +1,15 @@
+error404:
+  src: /assets/img/404.svg
+  alt:
+    es: Error 404
+    en: 404 Error
+  decorative: true
+  embed: false
+
+noposts:
+  src: /assets/img/noposts.svg
+  alt:
+    es: No hay posts
+    en: No posts
+  decorative: true
+  embed: false

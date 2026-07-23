@@ -1,0 +1,30 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
+
+  {%- include theme-init.html -%}
+  {%- include profile-context.html -%}
+
+  {%- seo -%}
+
+  {%- feed_meta -%}
+
+  {%- comment -%} Alternativas de Idioma para SEO (hreflang) {%- endcomment -%}
+
+  {%- for lang in site.languages -%}
+    {%- if lang == site.default_lang -%}
+      <link rel="alternate" hreflang="{{ lang }}" href="{{ page.url | absolute_url }}">
+    {%- else -%}
+      <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}{{ page.url }}">
+    {%- endif -%}
+  {%- endfor -%}
+
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+
+  {% if page.mathjax %}
+    {% include mathjax.html %}
+  {% endif %}
+</head>

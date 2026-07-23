@@ -1,0 +1,225 @@
+projects:
+  # Pendiente para la pasada final: traducciones al inglés + glosas de tags en las 3 primeras
+  - title:
+      es: Aitiden Radio
+      en: Aitiden Radio
+    year: "2008–2010"
+    client:
+      es: Proyecto propio (cofundador)
+      en: Personal project (co-founder)
+    description:
+      es: >
+        Cofundé una emisora de FM no comercial y dirigí toda su infraestructura
+        técnica: la cadena de audio (mesas de mezcla, reproductores, híbridos
+        telefónicos y audiograbadores) y un sistema de emisión automatizada 24/7
+        con grabación y hemeroteca, montado sobre equipos reacondicionados a
+        partir de material informático reciclado. El enlace entre los puntos de
+        retransmisión se resolvió por streaming ADSL de baja latencia, evitando
+        la licencia y las tasas anuales de los radioenlaces. Estuvo casi cuatro
+        años en antena de forma continua.
+      en: >
+        I co-founded a non-commercial FM radio station and ran its entire
+        technical infrastructure: the audio chain (mixing consoles, players,
+        telephone hybrids and audio recorders) and a 24/7 automated broadcasting
+        system with recording and archive, built on computers I refurbished
+        from discarded IT equipment. The link between broadcasting points was
+        solved through low-latency ADSL streaming, avoiding the licence and
+        annual fees of radio links. It stayed on air continuously for almost
+        four years.
+    technologies:
+      - es: ZaraRadio (automatización de emisión)
+        en: ZaraRadio (broadcast automation)
+      - es: Radiodifusión FM (cadena de audio)
+        en: FM broadcasting (audio chain)
+      - es: Streaming (enlace entre puntos)
+        en: Streaming (site-to-site link)
+      - es: Redes (interconexión de equipos)
+        en: Networking (equipment interconnection)
+      - es: Hardware (reacondicionamiento de equipos)
+        en: Hardware (equipment refurbishing)
+  
+  - title:
+      es: ACPAME — Acceso a Patio de Mercancías
+      en: ACPAME — Goods Yard Access Management
+    year: "2005–2006"
+    client:
+      es: Gran superficie comercial (Tenerife)
+      en: Large retail store (Tenerife)
+    description:
+      es: >
+        Mi primer proyecto, nacido desde dentro: trabajando en el control de
+        accesos vi que la recepción de mercancías se coordinaba por teléfono y
+        en papeles que ni siquiera permanecían en la garita — sin tablón ni
+        registro compartido. Diseñé e implementé sobre Microsoft Access una base
+        de datos con interfaz servida por un servidor web embebido, con acceso
+        simultáneo desde los tres puestos de recepción, y la blindé con VBA para
+        evitar manipulaciones indebidas. La llamada telefónica dio paso a la
+        consulta directa al sistema: información en tiempo real, avisos e
+        incidencias centralizados y un historial consultable. El sistema
+        contribuyó a que el centro obtuviera la certificación ISO 9001.
+      en: >
+        My first project, born from the inside: while working in access
+        control I saw that goods reception was coordinated by phone and on
+        paper forms that didn't even stay in the guard booth — no notice board,
+        no shared records. I designed and implemented a Microsoft Access
+        database with an interface served through an embedded web server,
+        allowing simultaneous access from the three reception desks, and
+        hardened it with VBA to prevent improper manipulation. Phone calls gave
+        way to direct system queries: real-time information, centralised
+        notices and incidents, and a searchable history. The system contributed
+        to the site obtaining its ISO 9001 certification.
+    technologies:
+      - es: Microsoft Access (base de datos y aplicación)
+        en: Microsoft Access (database and application)
+      - es: SQL (consultas y datos)
+        en: SQL (queries and data)
+      - es: VBA (blindaje de la interfaz)
+        en: VBA (interface hardening)
+      - es: Servidor web embebido (acceso multipuesto)
+        en: Embedded web server (multi-desk access)
+  
+  - title:
+      es: Red wifi con autenticación y credenciales temporales
+      en: Wi-Fi network with authentication and expiring credentials
+    year: 2017
+    client:
+      es: Residencia de estudiantes universitarios
+      en: University student residence
+    description:
+      es: >
+        La residencia daba acceso a internet con una única clave WPA2 que los
+        estudiantes se pasaban entre ellos —hasta el punto de que acababan
+        conectándose personas ajenas— y no había forma de retirar el acceso
+        cuando un residente terminaba el curso. Implementé sobre Linux un
+        servidor de autenticación RADIUS que sustituía la clave compartida por
+        credenciales individuales, con fecha de caducidad por usuario —que la
+        administración renovaba ajustando las fechas de alta y baja según la
+        solicitud de cada residente— y un máximo de dos conexiones simultáneas
+        por cuenta (móvil y ordenador). Empaqueté el sistema como una imagen OVA
+        reproducible para que pudieran importarlo, replicarlo y conservar copias.
+        Colaboré además en la configuración de los puntos de acceso Ubiquiti que
+        daban cobertura.
+      en: >
+        The residence provided internet access through a single shared WPA2
+        password that students passed around — to the point that outsiders
+        ended up connecting — and there was no way to revoke access when a
+        resident finished the academic year. I implemented a RADIUS
+        authentication server on Linux that replaced the shared password with
+        individual credentials, featuring per-user expiry dates — renewable by
+        the administration simply by adjusting the start and end dates
+        according to each resident's application — and a limit of two
+        concurrent connections per account (phone and computer). I packaged
+        the system as a reproducible OVA image so it could be imported,
+        replicated and backed up. I also collaborated in configuring the
+        Ubiquiti access points providing coverage.
+    technologies:
+      - es: WPA2-Enterprise / 802.1X (seguridad wifi)
+        en: WPA2-Enterprise / 802.1X (Wi-Fi security)
+      - es: RADIUS (autenticación de usuarios)
+        en: RADIUS (user authentication)
+      - es: Linux (servidor)
+        en: Linux (server)
+      - es: Redes inalámbricas (cobertura y acceso)
+        en: Wireless networking (coverage and access)
+      - es: Ubiquiti (puntos de acceso)
+        en: Ubiquiti (access points)
+      - es: VirtualBox (virtualización y empaquetado OVA)
+        en: VirtualBox (virtualisation and OVA packaging)
+  
+  - title:
+      es: Hilo musical y cartelería digital en tienda
+      en: In-store music and digital signage system
+    year: 2023
+    client:
+      es: Cadena de ferreterías (Tenerife)
+      en: Hardware store chain (Tenerife)
+    description:
+      es: >
+        Reemplacé el sistema improvisado de ambientación de la tienda —una radio
+        FM que colaba anuncios de la competencia y televisores apagados o
+        alimentados con pendrives— por una solución propia sobre un equipo
+        reutilizado y software gratuito de uso comercial. Orquesté con ZaraRadio
+        el hilo musical, las cuñas de apertura y cierre y los anuncios propios,
+        reutilizando música sobre la que la empresa ya tenía derechos. Los vídeos
+        de las pantallas se servían por red con el DLNA de Windows, organizados
+        por secciones para localizarlos al instante, y la misma programación se
+        retransmitía a una segunda tienda de otro municipio mediante BUTT y
+        Caster.fm, evitando duplicar el coste del servicio. El conjunto,
+        administrable en remoto, cubrió 4 pantallas en 2 tiendas sin coste de
+        licencias.
+      en: >
+        I replaced the store's makeshift ambience setup — an FM radio that
+        slipped in competitors' adverts, and TVs that sat switched off or fed
+        from USB sticks — with an in-house solution running on a repurposed
+        computer and free software licensed for commercial use. I orchestrated
+        the background music, opening and closing announcements and in-house
+        adverts with ZaraRadio, reusing music the company already held rights
+        to. Videos for the screens were served over the network through
+        Windows' DLNA service, organised by store section for instant lookup,
+        and the same programming was rebroadcast to a second store in another
+        municipality via BUTT and Caster.fm, avoiding paying twice for the
+        same service. The whole setup, remotely manageable, covered 4 screens
+        across 2 stores with zero licensing costs.
+    technologies:
+      - es: ZaraRadio (hilo musical y cuñas)
+        en: ZaraRadio (background music and jingles)
+      - es: BUTT (emisión del streaming)
+        en: BUTT (stream broadcasting)
+      - es: Caster.fm (servidor de streaming)
+        en: Caster.fm (streaming server)
+      - es: DLNA (vídeo por red local)
+        en: DLNA (video over local network)
+      - es: Streaming (retransmisión entre tiendas)
+        en: Streaming (store-to-store rebroadcast)
+      - es: Redes (distribución del contenido)
+        en: Networking (content distribution)
+  
+  - title:
+      es: carloslb.com — Portafolio y blog personal (este sitio web)
+      en: carloslb.com — Personal portfolio and blog (this website)
+    year: 2026
+    client:
+      es: Proyecto propio
+      en: Personal project
+    description:
+      es: >
+        Diseño y desarrollo de este mismo sitio: un portafolio y blog bilingüe
+        (español e inglés) construido desde cero con Jekyll, sin framework. Su
+        arquitectura presenta tres perfiles profesionales —técnico,
+        administrativo y docente— sobre una misma base, diferenciados por
+        completo mediante tokens CSS de paleta y tipografía, con tema claro y
+        oscuro que respeta las preferencias del sistema. La accesibilidad es un
+        eje del proyecto: cumple las pautas WCAG 2.2 AA, con tipografías legibles
+        autoalojadas, navegación por teclado y prevención del parpadeo de tema.
+        El contenido se gestiona mediante datos en YAML y plantillas reutilizables,
+        y el versionado con Git.
+      en: >
+        Design and development of this very site: a bilingual (Spanish and
+        English) portfolio and blog built from scratch with Jekyll, no
+        framework. Its architecture presents three professional profiles —
+        technical, administrative and teaching — on a single foundation, fully
+        differentiated through CSS palette and typography tokens, with light
+        and dark themes that respect system preferences. Accessibility is a
+        core pillar: it meets WCAG 2.2 AA guidelines, with legible self-hosted
+        fonts, keyboard navigation and theme-flash prevention. Content is
+        managed through YAML data and reusable templates, with version control
+        in Git.
+    technologies:
+      - es: Jekyll (generador de sitios estáticos)
+        en: Jekyll (static site generator)
+      - es: Jekyll Polyglot (traducciones)
+        en: Jekyll Polyglot (translations)
+      - es: Liquid (plantillas)
+        en: Liquid (templating)
+      - es: Sass (estilos)
+        en: Sass (styling)
+      - es: JavaScript (interactividad)
+        en: JavaScript (interactivity)
+      - es: HTML5 (estructura)
+        en: HTML5 (structure)
+      - es: CSS3 (diseño)
+        en: CSS3 (design)
+      - es: Accesibilidad (WCAG 2.2 AA)
+        en: Accessibility (WCAG 2.2 AA)
+      - es: Git (control de versiones)
+        en: Git (version control)

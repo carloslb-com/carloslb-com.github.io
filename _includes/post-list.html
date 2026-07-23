@@ -1,0 +1,64 @@
+{% if include.category %}
+    {% assign entries = site.posts | where: "categories", include.category %}
+{%- else -%}
+    {% assign entries = site.posts %}
+{% endif %}
+
+{%- if entries.size == 0 -%}
+    <div class="noposts__container">
+        <div class="noposts__illustration" markdown="0">
+            {% include image.html id="noposts" %}
+        </div>
+        <div class="noposts__text" markdown="0">
+            {%- case site.active_lang -%}
+                {%- when "es" -%}
+                    <h2>¡Vaya...!</h2>
+                    <p>Todavía no hay nada publicado.</p>
+                    <p>No te preocupes, pronto habrá contenido interesante. Estate atento 😉</p>
+                {%- when "en" -%}
+                    <h2>Oooops...!</h2>
+                    <p>Nothing has been published yet.</p>
+                    <p>Don't worry, there will soon be some interesting articles. Stay tuned 😉</p>
+                {%- else -%}
+                    <h2>Oooops...!</h2>
+                    <p>Nothing has been published yet.</p>
+                    <p>Don't worry, there will soon be some interesting articles. Stay tuned 😉</p>
+            {%- endcase -%}
+            
+        </div>
+    </div>
+{%- else -%}
+<ul class="post-list">
+    {% for post in entries %}
+        <li class="post-list__item" data-tags="{{ post.tags | join: ',' }}">
+            <article class="post-card">
+                <h2 class="post-card__title">
+                    <a href="{{ post.url | relative_url }}{% if include.category %}?from={{ include.category }}{% endif %}">{{ post.title }}</a>
+                </h2>
+                <p class="post-card__date">
+                    {%- assign mes_numero = post.date | date: "%-m" | minus: 1 -%}
+                    {%- assign mes_nombre = site.data.ui.months[site.active_lang][mes_numero] -%}
+                    <time datetime="{{ post.date | date_to_xmlschema }}">
+                    {%- if site.active_lang == "es" -%}
+                        {{ post.date | date: "%-d" }} de {{ mes_nombre }} de {{ post.date | date: "%Y" }}
+                    {%- else -%}
+                        {{ mes_nombre }} {{ post.date | date: "%-d" }}, {{ post.date | date: "%Y" }}
+                    {%- endif -%}
+                    </time>
+                </p>
+                {% if post.categories.size > 0 %}
+                    <ul class="post-card__categories">
+                        {% for category in post.categories %}
+                            <li class="post-card__category post-card__category--{{ category }}">{{ category }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+                {% if post.excerpt %}
+                    <div class="post-card__excerpt">{{ post.excerpt }}</div>
+                {% endif %}
+            </article>
+        </li>
+    {% endfor %}
+</ul>
+{%- endif -%}
+{%- include tag-filter.html -%}

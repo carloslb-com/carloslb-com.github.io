@@ -1,0 +1,192 @@
+skip_to_content:
+  es: Saltar al contenido
+  en: Skip to content
+
+nav_main:
+  es: Navegación principal
+  en: Main navigation
+
+nav_profiles_heading:
+  es: Perfiles
+  en: Profiles
+
+nav_switch_profile:
+  es: Cambiar de perfil
+  en: Switch profile
+
+nav_switch_language:
+  es: Cambiar de idioma
+  en: Switch language
+
+nav_open:
+  es: Menú
+  en: Menu
+
+nav_close:
+  es: Cerrar
+  en: Close
+
+theme_toggle:
+  es: Cambiar tema
+  en: Switch theme
+
+theme_to_light:
+  es: Modo claro
+  en: Light mode
+
+theme_to_dark:
+  es: Modo oscuro
+  en: Dark mode
+
+lang_name:
+  es: Español
+  en: English
+
+lang_unavailable:
+  es: Traducción no disponible
+  en: Translation not available
+
+translation_pending:
+  es: "Este artículo todavía no está disponible en español. Lo estás leyendo en su versión original; la traducción está pendiente."
+  en: "This article isn't available in English yet. You're reading the original version; the translation is pending."
+
+copyright:
+  es: Todos los derechos reservados
+  en: All rights reserved
+
+nav_choose_world:
+  es: Elige por dónde entrar
+  en: Choose where to start
+
+door_desc:
+  it:
+    es: "Redes, sistemas y desarrollo con cabeza fría: soluciones que aguantan."
+    en: "Networks, systems and development with a cool head: solutions that last."
+  admin:
+    es: "Contabilidad, trámites y RRHH: papeles que no vuelven rebotados."
+    en: "Accounting, paperwork and HR: filings that don't bounce back."
+  teaching:
+    es: "Formación que empieza por escuchar y termina en entender."
+    en: "Training that starts with listening and ends in understanding."
+
+legal:
+  notice:
+    es: Aviso legal
+    en: Legal notice
+  cookies:
+    es: Política de cookies
+    en: Cookies
+  privacy:
+    es: Política de privacidad
+    en: Privacy policy
+  accessibility:
+    es: Declaración de accesibilidad
+    en: Accessibility declaration
+
+months:
+  es:
+    - enero
+    - febrero
+    - marzo
+    - abril
+    - mayo
+    - junio
+    - julio
+    - agosto
+    - septiembre
+    - octubre
+    - noviembre
+    - diciembre
+  en:
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+
+common:
+  blog:
+    es: Blog General
+    en: General Blog
+  contact:
+    es: Contacto
+    en: Contact
+  current:
+    es: Actualidad
+    en: Present
+
+profiles:
+  it:
+    name:
+      es: IT
+      en: IT
+    long_name:
+      es: IT / Telecomunicaciones
+      en: IT / Telecommunications
+    links:
+      about_me:
+        es: Sobre mí
+        en: About me
+      projects:
+        es: Proyectos
+        en: Projects
+      skills:
+        es: Habilidades
+        en: Skills
+      blog-it:
+        es: Blog de IT
+        en: IT Blog
+    sections:
+      techs_used:
+        es: Tecnologías usadas
+        en: Technologies used
+      links:
+        es: Enlaces
+        en: Links
+  admin:
+    name:
+      es: Administración
+      en: Administration
+    long_name:
+      es: Administración / RRHH
+      en: Administration / HR
+    links:
+      about_me:
+        es: Sobre mí
+        en: About me
+      experience:
+        es: Experiencia
+        en: Experience
+      certifications:
+        es: Certificaciones
+        en: Certifications
+      blog-admin:
+        es: Blog de Administración
+        en: Administration Blog
+  teaching:
+    name:
+      es: Formación
+      en: Training
+    long_name:
+      es: Formación / Docencia
+      en: Training / Teaching
+    links:
+      about_me:
+        es: Sobre mí
+        en: About me
+      methodology:
+        es: Metodología
+        en: Methodology
+      courses:
+        es: Cursos
+        en: Courses
+      blog-teaching:
+        es: Blog de Formación
+        en: Training Blog

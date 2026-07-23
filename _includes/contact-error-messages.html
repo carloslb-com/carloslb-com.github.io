@@ -1,0 +1,19 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const contactfields = document.querySelectorAll('[aria-invalid]');
+
+        function updateValidity(field) {
+            field.setAttribute('aria-invalid', field.matches(':user-invalid'))
+        }
+
+        contactfields.forEach(function (contactfield) {
+            const eventlist = ['input','blur','invalid'];
+            eventlist.forEach(function (eventname) {
+                contactfield.addEventListener(eventname, function(event) {
+                    var field = event.target;
+                    updateValidity(field);
+                })
+            })
+        });
+    })
+</script>

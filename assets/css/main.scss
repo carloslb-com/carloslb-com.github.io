@@ -1,0 +1,27 @@
+---
+---
+
+// ===================================
+//  Punto de entrada de estilos
+//  Orquesta todas las capas en orden
+//  de cascada (de base a específico)
+// ===================================
+
+// 1. Cimientos comunes
+@use "base/fonts";
+@use "base/reset";
+@use "base/theme";
+@use "base/base";
+
+// 2. Componentes
+@use "components/profile-switcher";
+@use "components/theme-toggle";
+@use "components/header";
+@use "components/nav";
+@use "components/sitetools";
+@use "components/footer";
+@use "components/landing";
+@use "components/post";
+@use "components/contact";
+@use "components/e404";
+@use "components/noposts";

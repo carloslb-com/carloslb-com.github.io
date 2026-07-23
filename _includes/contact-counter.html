@@ -1,0 +1,27 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var contactform = document.querySelector('form');
+        
+        var msgarea = document.getElementById("contact-message");
+
+        var counter = document.getElementById("contact-charcounter");
+
+        var charlimit = msgarea.getAttribute("maxlength");
+
+        var resetbutton = document.getElementById("contact-reset");
+
+        counter.textContent = charlimit;
+
+        function updateCharCounter() {
+            var charnumber = msgarea.textLength;
+            counter.textContent = charlimit - charnumber;
+        }
+
+        msgarea.addEventListener('input', updateCharCounter);
+        contactform.addEventListener('reset', function() {
+            setTimeout(updateCharCounter, 0);
+        });
+
+        updateCharCounter();
+    })
+</script>

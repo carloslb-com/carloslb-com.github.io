@@ -1,0 +1,29 @@
+<footer class="site-footer">
+    <div
+        class="site-copyright">Copyright © {{ "now" | date: '%Y' }} Carlos León Bolaños. {{ site.data.ui.copyright[site.active_lang] }}
+    </div>
+    <div class="site-socialmedia">
+        <ul>
+            {%- for link in site.data.links.socialmedia -%}
+                <li>
+                    <a href="{{ link.url }}" class="social-link" rel="noopener noreferrer">
+                        <span class="social-link__icon" aria-hidden="true">
+                            {%- include svg.html id=link.img_id -%}
+                        </span>
+                        <span class="visually-hidden">{{ link.name }} </span>
+                    </a>
+                </li>
+            {%- endfor -%}
+            <li><a href="https://wakapi.dev/api/activity/chart/carloslb-com.svg"><img src="https://img.shields.io/endpoint?url=https://wakapi.dev/api/compat/shields/v1/carloslb-com/interval:all_time&label=All%20time&color=blue" alt="wakapi"></a></li>
+        </ul>
+    </div>
+    <div class="site-legal">
+        <ul class="site-legal__links">
+            {%- for document in site.data.links.legal -%}
+                {%- assign doclink = document[1] -%}
+                {%- assign docname = document[0] -%}
+                <li><a href="{{ doclink | relative_url }}">{{ site.data.ui.legal[docname][site.active_lang] }}</a></li>
+            {%- endfor -%}
+        </ul>
+    </div>
+</footer>

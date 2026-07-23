@@ -1,0 +1,5 @@
+{%- if page.lang and page.lang != site.active_lang -%}
+<aside class="translation-notice" role="note">
+    {{ site.data.ui.translation_pending[site.active_lang] }}
+</aside>
+{%- endif -%}

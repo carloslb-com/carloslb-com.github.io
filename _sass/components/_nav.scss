@@ -1,0 +1,110 @@
+@use "../abstracts/variables" as v;
+
+
+// --- Escritorio y común ---
+// --- Desktop and common ---
+.site-nav {
+  max-width: 70ch;
+  margin-inline: auto;
+  padding: 0 1.5rem 1rem;
+}
+
+.site-nav__list,
+.site-nav__switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;   // quita los puntos de la lista
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: calc(#{v.$bp-nav} + 0.0625rem)) {
+  .nav-close { display: none !important; }
+  
+  .site-nav .profile-switcher, .site-nav .theme-toggle {
+    display: none;
+  }
+  
+  .site-nav__heading { display: none; }
+}
+
+// --- Móvil: Menú desplegable ---
+// --- Mobile: Foldable Menu ---
+@media (max-width: v.$bp-nav) {
+
+  .js-enabled .site-nav {
+    display: none;
+  }
+
+  .js-enabled .site-nav.is-open {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: fixed;
+    inset: 0; 
+    padding: 6rem 1.5rem 2rem;
+    background-color: var(--color-background);
+    z-index: 5;
+    overflow-y: auto;
+  }
+
+  .site-nav__heading {
+    margin: 0 0 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-shade);
+  }
+
+  .site-nav__heading--separated {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 0.0625rem solid var(--color-text-shade);
+  }
+
+  .site-nav__list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .site-nav__list a {
+    display: block;
+    padding: 0.875rem 0;
+    font-size: 1.15rem;
+  }
+
+  .site-nav .profile-switcher__list {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .site-nav .theme-toggle {
+    align-self: flex-start;
+    margin-top: 1rem;
+  }
+
+  .nav-close {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;                  // 44px: objetivo táctil generoso (nivel AAA)
+    height: 2.75rem;
+    background: none;
+    border: 0.0625rem solid var(--color-text-shade);
+    border-radius: 0.375rem;
+    color: var(--color-text-normal);
+    cursor: pointer;
+  }
+
+  .nav-close__icon,
+  .nav-close__icon svg {
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: currentColor;
+  }
+}

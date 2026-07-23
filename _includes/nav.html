@@ -1,0 +1,32 @@
+<nav class="site-nav" id="site-nav" aria-label="{{ site.data.ui.nav_main[site.active_lang] }}">
+    <button type="button" class="nav-close" id="nav_close" hidden>
+        <span class="nav-close__icon" aria-hidden="true">
+            {% include svg.html id="menu_close" %}
+        </span>
+        <span class="visually-hidden">{{ site.data.ui.nav_close[site.active_lang] }}</span>
+    </button>
+    <span class="site-nav__heading">{{ site.data.ui.nav_profiles_heading[site.active_lang] }}</span>
+    {%- include profile-switcher.html -%}
+    <span class="site-nav__heading site-nav__heading--separated">{{ site.data.ui.nav_main[site.active_lang] }}</span>
+    <ul class="site-nav__list">
+        {%- for link in site.data.navigation.profiles[page.profile].links -%}
+            <li>
+                <a href="{{ link.url | relative_url }}">{{ site.data.ui.profiles[page.profile].links[link.name][site.active_lang] }}</a>
+            </li>
+        {%- endfor -%}
+        {%- for link in site.data.navigation.common -%}
+            <li>
+                <a href="{{ link.url | relative_url }}">{{ site.data.ui.common[link.name][site.active_lang] }}</a>
+            </li>
+        {%- endfor -%}
+    </ul>
+    <button type="button" class="theme-toggle">
+        <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+            {%- include svg.html id="icon_theme_lightmode" -%}
+        </span>
+        <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+            {%- include svg.html id="icon_theme_darkmode" -%}
+        </span>
+        <span class="theme-toggle__text">{{ site.data.ui.theme_to_light[site.active_lang] }}</span>
+    </button>
+</nav>

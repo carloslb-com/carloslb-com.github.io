@@ -1,0 +1,21 @@
+<a class="skip-link" href="#content">{{ site.data.ui.skip_to_content[site.active_lang] }}</a>
+
+<header class="site-header">
+    <div class="site-header__bar">
+        <a class="site-logo" href="{{ '/' | relative_url }}">
+            <span class="site-logo__given">Carlos</span><br>
+            <span class="site-logo__family">León Bolaños</span>
+        </a>
+        <div class="site-header__controls">
+            {%- include profile-switcher.html -%}
+            {%- include sitetools.html -%}
+            <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site_nav" hidden>
+                <span class="nav-toggle__icon" aria-hidden="true">
+                    {%- include svg.html id="menu_hamburguer" -%}
+                </span>
+                <span class="nav-toggle__text">{{ site.data.ui.nav_open[site.active_lang] }}</span>
+            </button>
+        </div>
+    </div>
+    {%- include nav.html -%}
+</header>

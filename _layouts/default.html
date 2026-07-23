@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ site.active_lang }}" class="profile-{{ page.profile | default: 'home' }}">
+  {%- include head.html -%}
+  <body>
+    {%- include header.html -%}
+
+    <main class="site-main" id="content">
+      {% include translation-notice.html %}
+      {{ content }}  
+    </main>
+
+    {%- include footer.html -%}
+
+    {%- include theme-toggle.html -%}
+
+    {%- include nav-toggle.html -%}
+
+    {% if page.mermaid %}
+      {% include mermaid.html %}
+    {% endif %}
+</body>
+</html>
