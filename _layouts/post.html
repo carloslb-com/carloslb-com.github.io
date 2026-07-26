@@ -22,15 +22,20 @@ layout: default
             {% if page.categories.size > 0 %}
             <ul class="post__categories">
             {% for category in page.categories %}
-                <li class="post__category post__category--{{ category }}">{{ category }}</li>
+                {%- assign catname = site.data.ui.profiles[category].name[site.active_lang] -%}
+                {%- if catname != blank -%}
+                    {%- assign blogname = 'blog-' | append: category -%}
+                    {%- assign blogurl = site.data.navigation.profiles[category].links | where: 'name', blogname -%}
+                    <li class="post__category post__category--{{ category }}"><a href="{{ blogurl[0].url | relative_url }}" aria-label="{{ site.data.ui.profiles[category].links[blogname][site.active_lang] }}">{{ catname }}</a></li>
+                {%- else -%}
+                    <li class="post__category post__category--{{ category }}">{{ category }}</li>
+                {%- endif -%}
             {% endfor %}
             </ul>
             {% endif %}
         </div>
-
         {% if page.tags.size > 0 %}
         <ul class="post__tags">
-        {% assign post_profile = page.categories | first %}
         {% for tag in page.tags %}
             <li><a class="post__tag" href="{{ '/blog/' | relative_url }}?tag={{ tag | url_encode }}">{{ tag }}</a></li>
         {% endfor %}

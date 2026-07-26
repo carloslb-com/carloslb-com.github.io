@@ -61,7 +61,10 @@
 }
 
 // Categorías: el color de su mundo
-.post__category { color: var(--cat-accent, var(--color-text-shade)); }
-.post__category--it       { --cat-accent: var(--accent-it); }
+.post__category                   { color: var(--cat-accent, var(--color-text-shade)); }
+.post__category:hover,
+.post__category:focus-visible { background-color: color-mix(in srgb, var(--cat-accent) 12%, transparent); }
+.post__category--it               { --cat-accent: var(--accent-it); }
 .post__category--admin    { --cat-accent: var(--accent-admin); }
 .post__category--teaching { --cat-accent: var(--accent-teaching); }
+

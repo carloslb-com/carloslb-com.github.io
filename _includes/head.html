@@ -27,4 +27,61 @@
   {% if page.mathjax %}
     {% include mathjax.html %}
   {% endif %}
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      {%- case page.schema -%}
+        {%- when "Person" -%}
+          {%- include schema-person.html -%}
+        {%- when "WebSite" -%}
+          "@type": "WebSite",
+          "name": {{ site.title | jsonify }},
+          "url": {{ site.url | jsonify }},
+          "description": {{ site.description | jsonify }},
+          "inLanguage": {{ site.active_lang | jsonify }},
+          "author": {
+            {%- include schema-person.html -%}
+          }
+        {%- when "Blog" -%}
+          "@type": "Blog",
+          "name": {{ page.title | jsonify }},
+          "url": {{page.url | absolute_url | jsonify }},
+          "inLanguage": {{ site.active_lang | jsonify }},
+          "author": {
+            {%- include schema-person.html -%}
+          }
+        {%- when "BlogPosting" -%}
+          {%- assign sections = "" -%}
+          {%- for category in page.categories -%}
+              {%- assign section = site.data.ui.profiles[category].name[site.active_lang] -%}
+              {%- if section != blank -%}
+                {%- assign sections = sections | append: section | append: "|" -%}
+              {%- endif -%}
+          {%- endfor -%}
+          {%- assign sections = sections | split: '|' -%}
+          "@type": "BlogPosting",
+          "headline": {{ page.title | jsonify }},
+          "description": {{ page.excerpt | strip_html | strip | jsonify }},
+          "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+          "author": {
+            {%- include schema-person.html -%}
+          },
+          "inLanguage": {{ site.active_lang | jsonify }},
+          "articleSection": {{ sections | jsonify }},
+          "keywords": {{ page.tags | jsonify }},
+          "mainEntityOfPage": {{ page.url | absolute_url | jsonify }}
+        {%- when "ContactPage" -%}
+          "@type": "ContactPage",
+          "name": {{ page.title | jsonify }},
+          "url": {{ page.url | absolute_url | jsonify }},
+          "inLanguage": {{ site.active_lang | jsonify }},
+          "mainEntity": {
+            {%- include schema-person.html -%}
+          }
+        {%- else -%}
+          {%- include schema-person.html -%}
+      {%- endcase -%}
+    }
+  </script>
 </head>

@@ -5,7 +5,10 @@ permalink: /admin/
 title: Gestoría Fiscal, Contable y de Recursos Humanos
 lang: es
 published: true
+schema: Person
 ---
+
+<h1 id="profile-heading">{{ page.title }}</h1>
 
 <section id="about" aria-labelledby="about-heading" markdown="1">
   <h2 id="about-heading">{{ site.data.ui.profiles.admin.links.about_me[site.active_lang] }}</h2>

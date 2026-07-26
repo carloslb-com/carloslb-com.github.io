@@ -4,6 +4,7 @@ profile: admin
 permalink: /admin/blog/
 title: Blog de Administración
 lang: es
+schema: Blog
 ---
 
 <h1>{{ page.title }}</h1>

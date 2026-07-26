@@ -1,0 +1,13 @@
+"@type": "Person",
+"name": {{ site.data.person.name | jsonify }},
+"jobTitle": {{ site.data.person.jobtitle[site.active_lang] | jsonify }},
+"description": {{ site.data.person.description[site.active_lang] | jsonify }},
+"url": {{ site.url | jsonify }},
+"sameAs": {{ site.data.links.socialmedia | map: "url" | jsonify }},
+"address": {
+    "@type": "PostalAddress",
+    "addressLocality": {{ site.data.person.address.locality | jsonify }},
+    "addressRegion": {{ site.data.person.address.region | jsonify }},
+    "addressCountry": {{ site.data.person.address.country | jsonify }}
+},
+"knowsLanguage": {{ site.data.person.languages | jsonify}}

@@ -25,6 +25,10 @@ body {
   flex: 1;
 }
 
+.site-main:focus {
+  outline: none;
+}
+
 h1, h2, h3 {
   font-family: var(--font-heading);
   line-height: 2;

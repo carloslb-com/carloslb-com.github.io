@@ -2,8 +2,9 @@
 layout: default
 profile: teaching
 permalink: /teaching/blog/
-title: Blog de Formación
+title: Blog de Formación / Docencia
 lang: es
+schema: Blog
 ---
 
 <h1>{{ page.title }}</h1>
