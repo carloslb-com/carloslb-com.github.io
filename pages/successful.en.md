@@ -8,7 +8,7 @@ sitemap: false
 noindex: true
 ---
 
-Message sent. Thanks.
+# Message sent. Thanks.
 
 Got it. I'll reply as soon as possible to the email address you provided.
 

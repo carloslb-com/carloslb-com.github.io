@@ -8,7 +8,7 @@ sitemap: false
 noindex: true
 ---
 
-Mensaje enviado. Gracias.
+# Mensaje enviado. Gracias.
 
 Ya lo tengo. Te responderé lo antes posible a la dirección de correo que me has dejado.
 
