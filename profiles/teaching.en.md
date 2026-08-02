@@ -17,7 +17,7 @@ schema: Person
 
 I discovered I liked teaching almost at the same time I discovered radio. At Aitiden, besides running the technical side, it fell to me to train my colleagues: how to handle a mixing console, what a balanced audio signal is — and why it was designed that way —, how to build your own cables by reading pinout diagrams. And something happened that I didn't expect: I enjoyed watching someone understand more than solving it myself.
 
-Life then took me to teach very different things — in a folk group I helped teach how to play the chácaras and the Tenerife drum — and everywhere I heard the same: that I had patience and knew how to explain. It came up so often that I started observing myself to check whether it was true. Out of that observation came my way of teaching (you'll find it under Methodology).
+Life then took me to teach very different things — in a folk group I helped teach how to play the <span lang="es">chácaras</span> and the Tenerife drum — and everywhere I heard the same: that I had patience and knew how to explain. It came up so often that I started observing myself to check whether it was true. Out of that observation came my way of teaching (you'll find it under Methodology).
 
 I haven't stopped since, even without a classroom of my own: throughout my vocational studies and certificates I've tutored classmates who were falling behind with the syllabus and the practical work, and I've contributed materials and tools to help teachers expand theirs — always with their blessing, in their classes. One teacher went as far as telling me my assignments were "dissertations rather than homework", because I'm not satisfied with something merely working: I need to be able to explain why it works.
 

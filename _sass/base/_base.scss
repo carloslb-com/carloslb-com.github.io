@@ -2,7 +2,7 @@
 
 @media (min-width: calc(#{v.$bp-nav} + 0.0625rem)) {
   html {
-    scroll-padding-top: 8rem;
+    scroll-padding-top: 9rem; /* Last value: 8rem */
   }
 }
 
@@ -87,6 +87,6 @@ button:focus-visible {
 
 @media (max-width: calc(#{v.$bp-nav} + 0.0625rem)) {
   html {
-    scroll-padding-top: 5.5rem;
+    scroll-padding-top: 6.5rem ; /* Last value: 5.5rem */
   }
 }
